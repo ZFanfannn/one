@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "connectwifi.h": "c",
+        "esp8266wifi.h": "c",
+        "ostream": "cpp",
+        "system_error": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
