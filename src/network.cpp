@@ -1,6 +1,7 @@
 #include "network.h"
-WiFiClient wifiClient;
 HTTPClient http;
+WiFiClient wifiClient;
+//连接WiFi
 void Network::connectWifi(String ssid, String password)
 {   int n = WiFi.scanNetworks(); //判断是否有可连接的网络
     Serial.print("available Network count:");
@@ -38,6 +39,7 @@ void Network::connectWifi(String ssid, String password)
     Serial.println(WiFi.localIP());             //返回IP地址
 }
 
+//获取粉丝数量
 unsigned int Network::getBilibiliFans(String uid)
 {
 	String fansCount = "";
